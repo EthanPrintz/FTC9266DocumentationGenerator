@@ -3,6 +3,9 @@ html,body{
     padding: 0;
 }
 .page{
-    width:100vw;
+    width: 100vw;
+    height:100px;
+    display:block;
     page-break-after: always;
+    background-color: red;
 }
