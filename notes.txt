@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>FTC9266 Documentation</title>
+        <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="journal.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="journal.js"></script>
+    </head>
+    <body>
+        <div class='page'><div class='pageContainer'>
+            <div class='pageHeader normalHeader'>
+                <div class='meetDate'>3/4/16</div>
+                <div class='meetDay'>Friday</div>
+                <div class='meetType'>Clubs Period</div>
+                <div class='meetTime'>12:15 - 1:40 PM</div>
+            </div>
+            <div class='pageBody normalBody'>
+                
+            </div>
+            <div class='pageTeam'>9266 Pyrobots Engineering Notebook</div>
+            <div class='pageNumTri'></div>
+                <div class='pageNum'>J1</div>
+        </div></div>
+        <div class='page'>
+            <div class='header'>
+                <div class='date'></div>
+            </div>
+            
+        </div>
+    </body>
+</html>

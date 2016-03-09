@@ -1,11 +1,122 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,500,700,900,700italic,900italic);
+    @page {
+      size: 8.5in 11in;
+   }
+
+/*Variable Declaration*/
+:root{
+    /*Coloring*/
+    --primaryColor: #4ba8e5;
+    --secondaryColor: #79beec;
+    /*Fonts*/
+    --primaryFontColor: #f5f5f5;
+    --secondaryFontColor: #e5e5e5;
+    --darkFontColor: #333333;
+    /*Sizing*/
+    --pageWidth: 816px;
+    --pageHeight: 1056px;
+    --headerHeight: 80px;
+}
+
+
 html,body{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 .page{
-    width: 100vw;
-    height:100px;
+    width: var(--pageWidth);
+    height: var(--pageHeight);
     display:block;
     page-break-after: always;
-    background-color: red;
 }
+    .pageContainer{
+        width: var(--pageWidth);
+        height: var(--pageHeight);
+        position:relative;
+    }
+    .pageHeader{
+        width: var(--pageWidth);
+        height: var(--headerHeight);
+        background-color: var(--primaryColor);
+        color:var(--primaryFontColor);
+        position:relative;
+    }
+        .meetDate{
+            font-size:34px;
+            position:absolute;
+            top:6px;
+            right:10px;
+            text-align:right;
+        }
+        .meetDay{
+            font-size:22px;
+            position:absolute;
+            top:44px;
+            right:10px;
+            text-align:right;
+            color:var(--primaryFontColor);
+        }
+        .meetType{
+            font-size:34px;
+            position:absolute;
+            top:6px;
+            left:10px;
+        }
+        .meetTime{
+            color:var(--secondaryFontColor);
+            font-size:22px;
+            position:absolute;
+            top:44px;
+            left:10px;
+        }
+    .teamPresent{
+        position: absolute;
+        top: var(--headerHeight);
+        width: var(--pageWidth);
+        padding: 8px;
+        box-sizing: border-box;
+        color: var(--primaryFontColor);
+        background-color: var(--secondaryColor);
+    }
+        .teamPresentTitle{
+            font-size: 20px;
+        }
+        .teamPresentTable{
+            width: 100%;
+            border: 0;
+            padding: 0;
+            color: var(--primaryFontColor);
+        }  
+            .teamPresentTable td{
+                padding:2px;
+                box-sizing:border-box;
+                text-align:center;
+            }
+    .pageBody{
+
+    }
+        .pageTeam{
+            position: absolute;
+            left: 10px;
+            bottom: 6px;
+            color: var(--darkFontColor);
+        }
+        .pageNumTri{
+            position: absolute;
+            right:0;
+            bottom:0;
+            width:0;
+            height:0;
+            border-style: solid;
+            border-width: 0 0 100px 100px;
+            border-color: transparent transparent  var(--primaryColor) transparent;
+        }
+            .pageNum{
+                position: absolute;
+                right: 6px;
+                bottom: 6px;
+                color: var(--primaryFontColor);
+                font-size: 30px;
+                text-align: right;
+            }
